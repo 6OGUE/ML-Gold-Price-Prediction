@@ -1,80 +1,55 @@
-# ML-Gold-Price-Prediction
-This project focuses on predicting the price of Gold (GLD index) using Machine Learning techniques. By analyzing financial indicators, we use a Random Forest Regressor to model and forecast gold prices.
+# 📈 Gold Price Prediction using Machine Learning  
 
-🚀 Features
+This project predicts **Gold Prices (GLD index)** using **Machine Learning** techniques.  
+By analyzing financial indicators, we train a **Random Forest Regressor** to forecast gold prices with high accuracy.  
 
-Preprocessing of financial dataset (gld_price_data.csv)
+---
 
-Train-Test Split (80-20)
+## 🚀 Features
+- Preprocesses and cleans dataset (`gld_price_data.csv`)  
+- Splits data into **train (80%)** and **test (20%)** sets  
+- Trains a **Random Forest Regressor (100 trees)**  
+- Evaluates performance using **R² Score**  
+- Visualizes **Actual vs Predicted Gold Prices**  
 
-Random Forest Regressor model for prediction
+---
 
-Evaluation using R² Score
+## 📂 Dataset
+- File: `gld_price_data.csv`  
+- Contains financial features + **GLD (Gold Price)** column  
+- **Target Variable**: `GLD`  
+- **Date column** is dropped since it does not affect prediction  
 
-Visualization of Actual vs Predicted Gold Prices
+---
 
-📂 Dataset
+## ⚙️ Workflow
+1. **Data Collection & Cleaning** → Load dataset, remove missing values  
+2. **Feature Engineering** → Separate features (`X`) and target (`Y`)  
+3. **Train-Test Split** → 80% training data, 20% testing data  
+4. **Model Training** → Apply **Random Forest Regressor (n_estimators=100)**  
+5. **Evaluation** → Calculate **R² Score**  
+6. **Visualization** → Plot **Actual vs Predicted Prices**  
 
-File used: gld_price_data.csv
+---
 
-Contains multiple financial features along with the GLD (Gold Price) column.
+## 🧠 Machine Learning Model
+- **Algorithm**: Random Forest Regressor  
+- **Why Random Forest?**  
+  - Handles non-linear data well  
+  - Reduces overfitting compared to single decision trees  
+  - Provides strong accuracy for regression tasks  
 
-Target variable: GLD (Gold Price).
+---
 
-The Date column is dropped since it does not contribute to prediction.
+## 📊 Results
+- **Metric Used**: R² Score  
+- Achieved **~0.98 R²** → Excellent performance 🎯  
+- Visualization shows predicted values closely follow actual gold prices  
 
-⚙️ Workflow
+---
 
-Data Collection & Cleaning
-
-Load dataset and remove missing values.
-
-Feature Engineering
-
-Separate features (X) and target (Y).
-
-Train-Test Split
-
-80% training data, 20% testing data.
-
-Model Training
-
-Apply Random Forest Regressor (100 trees).
-
-Evaluation
-
-Evaluate using R² Score.
-
-Visualization
-
-Plot Actual vs Predicted Gold Prices.
-
-🧠 Machine Learning Model
-
-Algorithm: Random Forest Regressor
-
-Why Random Forest?
-
-Handles non-linear data well
-
-Reduces overfitting compared to single decision trees
-
-Provides high accuracy for regression tasks
-
-📊 Results
-
-Evaluation Metric: R² Score
-
-A high R² Score (~0.98+) indicates excellent performance.
-
-Visualization clearly shows predicted values closely following actual gold prices.
-
-🔧 Technologies Used
-
-Python
-
-Pandas, NumPy → Data handling
-
-Matplotlib, Seaborn → Visualization
-
-scikit-learn → Machine Learning
+## 🔧 Technologies Used
+- Python  
+- Pandas, NumPy → Data handling  
+- Matplotlib, Seaborn → Visualization  
+- scikit-learn → Machine Learning  
